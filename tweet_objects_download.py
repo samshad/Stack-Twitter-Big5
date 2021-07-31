@@ -17,7 +17,7 @@ for index, row in df.iterrows():
     users.append(str(row['Twitter ID']).split('https://twitter.com/')[1])
 
 cnt = 0
-for user in users[:100]:
+for user in users:
     print(user)
     cnt += 1
     print('Count: ', str(cnt))

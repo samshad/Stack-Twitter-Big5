@@ -131,3 +131,4 @@ dmypy.json
 Data/
 00.py
 Auth/
+train.py
