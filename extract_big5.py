@@ -3,13 +3,13 @@ import json
 import os
 
 
-files = os.listdir('Data/Personality/')
+files = os.listdir('Data/Personality_Tweets/')
 
 arr = []
 for file in files:
     tmp = [file.split('_personality.json')[0]]
 
-    with open('Data/Personality/' + file, 'r') as f:
+    with open('Data/Personality_Tweets/' + file, 'r') as f:
         data = json.load(f)
     
     for i in data['personality']:
