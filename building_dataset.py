@@ -4,7 +4,7 @@ import ast
 
 main_data = pd.read_csv('Data/Stack+Twitter+Ocean Data.csv')
 twitter = pd.read_csv('Data/twitter_data.csv')
-personality = pd.read_csv('Data/personality_data.csv')
+personality = pd.read_csv('Data/personality_data_twitter.csv')
 stackoverflow = pd.read_csv('Data/stackoverflow_data.csv')
 
 # stackoverflow['top_tags_question'] = stackoverflow['top_tags_question'].apply(lambda x: ast.literal_eval(x))
@@ -51,4 +51,4 @@ df = pd.DataFrame(arr, columns=['twitter_id', 'stackoverflow_id', 'location', 'q
                                 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Emotional range', 
                                 'Conservation', 'Openness to change', 'Hedonism', 'Self-enhancement', 
                                 'Self-transcendence'])
-df.to_csv('Data/dataset.csv', index=False)
+df.to_csv('Data/merged_data.csv', index=False)

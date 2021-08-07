@@ -26,7 +26,7 @@ df = pd.DataFrame(arr, columns=['users', 'Openness', 'Conscientiousness', 'Extra
                                 'Emotional range', 'Conservation', 'Openness to change', 'Hedonism', 
                                 'Self-enhancement', 'Self-transcendence'])
 
-df.to_csv('Data/personality_data.csv', index=False)
+df.to_csv('Data/personality_data_twitter.csv', index=False)
 
 """
 Openness

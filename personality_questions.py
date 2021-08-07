@@ -10,7 +10,7 @@ questions = pd.read_csv('Data/stackoverflow_questions.csv')
 
 cnt = 1
 
-for user in users[2:]:
+for user in users:
     tf = questions[questions['stackoverflow_id'] == user]
 
     texts = ''
